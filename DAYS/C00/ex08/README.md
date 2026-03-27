@@ -102,7 +102,7 @@ so the result of out example gonna be {0, 1, 2, 4, 5, 6, 7}\
 	ex: index = 1(7)89\
 	i = index - 1\
 	i = (1)789
-2. Increment i by 1. (i++) -> 2789
+2. Increment i by 1. (i++) -> 2789 
 3. While the two conditions is true
 	- (i < size of array - 1) (size - 1) is the last element of the array
  	because we need to increment the i + 1 element till we reach the end 

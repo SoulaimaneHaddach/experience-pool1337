@@ -3,9 +3,9 @@
 - Reproduce the behavior of the function __strcpy__ (man strcpy).
 - Here's how it should be prototyped:
 ```C
-   char		*ft_strcpy(char *dest, char *src);
+   char	*ft_strcpy(char *dest, char *src);
 ```
-
+`
 ## Understanding strcpy
 Syntax: char \*strcpy (char \*destination, const char \*source);\
 

@@ -2,7 +2,7 @@
 - Reproduce the behavior of the function strlcpy (man strlcpy).
 - Here's how it should be prototyped:
 ```C
-	unsigned inft_strlcpyt	(char *dest, char *src, unsigned int size);
+	unsigned int ft_strlcpy	(char *dest, char *src, unsigned int size);
 ```
 ## Understanding strlcpy
 ### Description:

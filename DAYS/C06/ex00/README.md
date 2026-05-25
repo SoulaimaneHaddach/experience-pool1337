@@ -1,5 +1,4 @@
-## ft_print_program_name
-
+## Exercise 00 : ft_print_program_name
 
 - Turn-in directory : ex00/
 - Files to turn in : ft_print_program_name.c

@@ -1,12 +1,17 @@
 #include <unistd.h>
-void ft_putchar (char c);
-void ft_print_numbers(void)
+
+void ft_putchar(char c)
 {
-    char number;
-    number = '0';
-    while (number <= '9' )
+    write(1, &c, 1);
+}
+void ft_print_numbers_(void)
+{
+    char n;
+
+    n = '0';
+    while(n <='9')
     {
-        ft_putchar(number);
-        number++;
+        ft_putchar(n);
+        n++;
     }
 }

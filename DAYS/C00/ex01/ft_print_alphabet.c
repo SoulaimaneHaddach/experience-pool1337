@@ -1,12 +1,17 @@
 #include <unistd.h>
-void ft_putchar (char c);
-void ft_print_alphabet (void)
+
+void ft_putchar(char c)
 {
-    char cont ;
-    cont = 'a';
-    while( cont <= 'z')
-    {
-        ft_putchar(cont);
-        cont++;
-    }
+	write(1, &c, 1);
+}
+void	ft_print_alphabet(void)
+{
+	char	c;
+
+	c = 'a';
+	while (c <= 'z')
+	{
+		ft_putchar(c);
+		c++;
+	}
 }

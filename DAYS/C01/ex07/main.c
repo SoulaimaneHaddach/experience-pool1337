@@ -4,16 +4,17 @@ void	ft_rev_int_tab(int *tab, int size);
 
 int main (void)
 {
-    int arr[] = {1,2,3,4};
-    int i = 0;
+    int tab[] = {1, 2, 3, 4};
     int size = 4;
+    int i;
 
-    ft_rev_int_tab( arr , size);
+    ft_rev_int_tab( tab , size);
 
-    for ( i = 0; i < size; i++ )
+    i = 0;
+    while(i < size)
     {
-        printf("%d " , arr[i]);
-
+        printf("%d " , tab[i]);
+            i++;
     }
     return 0;
 }

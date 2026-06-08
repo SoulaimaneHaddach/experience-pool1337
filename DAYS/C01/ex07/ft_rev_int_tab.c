@@ -1,16 +1,16 @@
 #include <unistd.h>
 
-void ft_rev_int_tab ( int *tab, int size )
+void	ft_rev_int_tab(int *tab, int size)
 {
-    int i = 0:
-    int temp ;
+    int i;
+    int temp;
 
-    while ( i < size / 2)
+    i = 0;
+    while(i < size / 2)
     {
-        temp = tap[i];
-        tap[i] = tap[size - 1 - i];
-        tap[ size - 1 - i] = temp;
-        i++
+        temp = tab[i];
+        tab[i] = tab[size - 1 - i];
+        tab[size - 1 - i] = temp;
+        i++;
     }
 }
-

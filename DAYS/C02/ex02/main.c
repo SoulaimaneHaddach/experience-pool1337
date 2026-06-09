@@ -4,7 +4,7 @@ int ft_str_is_alpha(char *str);
 
 int main(void)
 {
-    printf("%d\n", ft_str_is_alpha("salama"));
+    printf("%d\n", ft_str_is_alpha("222"));
 
     return 0;
 }

@@ -4,15 +4,12 @@ unsigned int ft_strlcpy	(char *dest, char *src, unsigned int size);
 
 int main(void)
 {
-    char	src[] = "42137iokje";
-	char	dest[5];
-	unsigned int	result;
+	char dest[10];
 
-	result = ft_strlcpy(dest, src, 5);
-
-	printf("Source      : %s\n", src);
-	printf("Destination : %s\n", dest);
-	printf("Return      : %u\n", result);
+	printf("%u\n", ft_strlcpy(dest, "hello", 10));
+	printf("%s\n", dest);
+	printf("%u\n", ft_strlcpy(dest, "hello", 4));
+	printf("%s\n", dest);
 
 	return (0);
 }

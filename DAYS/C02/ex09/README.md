@@ -1,4 +1,4 @@
-## Exercise 10: ft_strcapitalize
+## Exercise 09: ft_strcapitalize
 - Create a function that capitalize the first letter of each word and transforms all other letter to lowercase.
 - A word is a string of alphanumeric characters.
 - Here's how it should be prototyped:

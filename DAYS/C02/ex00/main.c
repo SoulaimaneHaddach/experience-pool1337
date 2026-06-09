@@ -2,15 +2,14 @@
 
 char	*ft_strcpy(char *dest, char *src);
 
-int main (void)
+int main(void)
 {
-    char src[] =  "okey";
+    char src[] = "hy";
     char dest[50];
 
+    printf("dest before : %s\n", dest);
     ft_strcpy(dest, src);
-
-    printf("src = %s\n" , src);
-    printf("dest = %s", dest);
+    printf("dest after  : %s\n", dest);
     
     return 0;
 }

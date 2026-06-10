@@ -6,11 +6,9 @@ char	*ft_strcat(char *dest, char *src)
     int j;
 
     i = 0;
-    j = 0;
     while(dest[i])
-    {
         i++;
-    }
+    j = 0;
     while(src[j])
     {
         dest[i] = src[j];
@@ -18,6 +16,5 @@ char	*ft_strcat(char *dest, char *src)
         j++;
     }
     dest[i] = '\0';
-    
-    return (dest); 
+    return (dest);
 }

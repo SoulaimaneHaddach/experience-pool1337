@@ -4,16 +4,10 @@ char	*ft_strncat(char *dest, char *src, int nb);
 
 int main(void)
 {
-    char dest[50] = "solay";
-    char src[]  = "manokwd";
-    int nb;
+    char dest[50] = "hello ";
 
-    nb = 3;
-    printf("before : %s\n" ,dest);
 
-    ft_strncat( dest, src , nb);
-
-    printf("after : %s\n" ,dest);
+    printf("dest : %s\n" ,ft_strncat( dest, "world" , 5));
 
     return 0;
 }

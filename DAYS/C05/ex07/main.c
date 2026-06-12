@@ -5,17 +5,9 @@ int	ft_find_next_prime(int nb);
 
 int main(void)
 {
-    int nb;
-    int prime;
-    int nextprime;
-
-    nb = 4;
-    prime = ft_is_prime(nb);
-    nextprime = ft_find_next_prime(nb);
-
-    printf("nb : %d\n", nb);
-    printf("Prime : %d\n", prime);
-    printf("Next Prime : %d\n", nextprime);
-
+	printf("%d\n", ft_find_next_prime(0));
+	printf("%d\n", ft_find_next_prime(4));
+	printf("%d\n", ft_find_next_prime(7));
+	printf("%d\n", ft_find_next_prime(14));
     return 0;
 }

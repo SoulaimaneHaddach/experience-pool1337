@@ -6,7 +6,7 @@ int main(int argc, char **argv)
     int j;
 
     i = 1;
-    while (i < argc)
+    while(i < argc)
     {
         j = 0;
         while(argv[i][j])
@@ -17,5 +17,4 @@ int main(int argc, char **argv)
         write(1, "\n", 1);
         i++;
     }
-    return 0;
 }

@@ -12,7 +12,7 @@ int	main(void)
 	i = 0;
 	while (result[i])
 	{
-		printf("%s\n", result[i]);
+		printf("%s ", result[i]);
 		free(result[i]);
 		i++;
 	}

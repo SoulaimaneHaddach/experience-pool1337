@@ -9,18 +9,18 @@ int main(void)
     int i;
     int min;
     int max;
+    int size;
 
-    min = 3;
-    max = 8;
-
+    min = 5;
+    max = 1;
+    size = max - min;
     result = ft_range(min, max);
     i = 0;
-    while (i < max - min)
+    while (i < size)
     {
-        printf("%d\n" , result[i]);
+        printf("%d " , result[i]);
         i++;
     }
-
     free(result);
     return 0;
 }

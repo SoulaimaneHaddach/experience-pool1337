@@ -5,10 +5,10 @@ char	*ft_strdup(char *src);
 
 int main(void)
 {
-    char *result;
+    char *copy;
 
-    result = ft_strdup("hello");
-    printf("result : %s\n", result);
-    free(result);
+    copy = ft_strdup("hello");
+    printf("result : %s\n", copy);
+    free(copy);
     return 0;
 }

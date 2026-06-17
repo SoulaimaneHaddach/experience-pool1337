@@ -15,11 +15,11 @@ int main(void)
     max = 6;
 
     size = ft_ultimate_range(&result, min, max);
-
+    printf("range : %d\n", size);
     i = 0;
     while(i < size)
     {
-        printf("%d\n", result[i]);
+        printf("%d ", result[i]);
         i++;
     }
     free(result);

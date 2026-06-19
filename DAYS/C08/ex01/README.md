@@ -9,7 +9,7 @@ void	ft_putchar(char *str)
 		write(1, str++, 1);
 }
 
-t_bool	ft_is_even{int nbr)
+t_bool	ft_is_even(int nbr)
 {
 	return ((EVEN(nbr)) ? TRUE : FALSE);
 }

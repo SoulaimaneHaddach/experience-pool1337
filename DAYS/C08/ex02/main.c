@@ -4,7 +4,7 @@
 int main(void)
 {
     printf("%d\n", ABS(-3));
-    printf("%d\n", ABS(-3));
+    printf("%d\n", ABS(3));
     printf("%d\n", ABS(-399));
     printf("%d\n", ABS(0));
     

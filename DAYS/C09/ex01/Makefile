@@ -1,26 +1,28 @@
 NAME = libft.a
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -I includes
+CFLAGS = -Wall -Wextra -Werror
 
-SRC = srcs/ft_putchar.c \
-      srcs/ft_putstr.c \
-	  srcs/ft_strcmp.c \
-	  srcs/ft_strlen.c \
-	  srcs/ft_swap.c
+INCLUDES = -I includes
 
-OBJ = $(SRC:.c=.o)
+SRCS =  srcs/ft_putchar.c \
+		srcs/ft_strlen.c \
+		srcs/ft_swap.c \
+		srcs/ft_putstr.c \
+		srcs/ft_strcmp.c
 
-all: $(NAME)
+OBJS = $(SRCS:.c=.o)
 
-$(NAME) : $(OBJ)
-	ar rc $(NAME) $(OBJ)
+all : $(NAME)
+
+$(NAME) : $(OBJS)
+	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+srcs/%.o : srcs/%.c
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
-clean:
-	rm -f $(OBJ)
+clean: 
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)

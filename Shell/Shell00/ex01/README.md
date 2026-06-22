@@ -77,12 +77,12 @@ So 7 is the combination of permissions 4+2+1 (read, write, and execute),\
 |:---:|:-----------------------:|:---:|:---:|
 |  7  | read, write and execute | 111 | rwx |
 |  6  | read and write	        | 110 | rw- |
-|  5  | read and execute	| 101 | r-x |
-|  4  | read only		| 100 | r-- |
-|  3  | write and execute	| 011 | -wx |
-|  2  | write only		| 010 | -w- |
-|  1  | execute only		| 001 | --x |
-|  0  | none			| 000 | --- |
+|  5  | read and execute	    | 101 | r-x |
+|  4  | read only		        | 100 | r-- |
+|  3  | write and execute	    | 011 | -wx |
+|  2  | write only		        | 010 | -w- |
+|  1  | execute only		    | 001 | --x |
+|  0  | none			        | 000 | --- |
 
 For more detail read `man` entry of `chmod`:
 ```

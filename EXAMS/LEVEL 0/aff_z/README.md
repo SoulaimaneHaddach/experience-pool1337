@@ -16,7 +16,7 @@ by a newline. If the number of parameters is not 1, the program displays
 Example:
 
 $> ./aff_z "abc" | cat -e
-z$
+z$7
 $> ./aff_z "dubO a POIL" | cat -e
 z$
 $> ./aff_z "zaz sent le poney" | cat -e

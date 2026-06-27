@@ -15,3 +15,15 @@ Too many arguments.
 $>
 ```
 - Allowed functions: close, open, read, write
+
+
+### Summary
+
+| **`open()`**   | connects your program to a file, gives you an fd number           |
+| **`read()`**   | copies bytes from the file into your buffer, moves cursor forward |
+| **`write()`**  | sends bytes from your buffer to a destination (screen, file, etc) |
+| **`close()`**  | releases the fd, frees the slot in the table                      |
+| **fd**         | just a number — your ID card to access the file                   |
+| **buffer**     | a temporary box that holds data between read and write            |
+| **the loop**   | needed because the file might be bigger than the buffer           |
+| **bytes_read** | always write exactly this — never the full buffer size            |

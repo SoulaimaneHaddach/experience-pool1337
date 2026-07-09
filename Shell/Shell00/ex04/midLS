@@ -1,1 +1,1 @@
-ls -trhpm
+ls -pt | paste -sd, -

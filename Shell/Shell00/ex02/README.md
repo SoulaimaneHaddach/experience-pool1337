@@ -1,3 +1,9 @@
+Exercise 02 : Oh yeah, mooore...
+Exercise 02
+Oh yeah, mooore...
+Turn-in directory : ex02/
+Files to turn in : exo2.tar
+Allowed functions : None
 ### Objective:
 ```
 $ ls -l

@@ -12,6 +12,7 @@ unsigned char	reverse_bits(unsigned char octet)
         result = result << 1;
         result = result | (octet & 1);
         octet  = octet >> 1;
+        i--;
     }
     return(result);
 }

@@ -1,18 +1,17 @@
 #include <stdlib.h>
-
 int ft_strlen(char *str)
 {
     int len;
 
-    len  = 0;
+    len = 0;
     while(str[len])
         len++;
     return(len);
 }
 int total_len(int size, char **strs, char *sep)
 {
-    int total;
     int i;
+    int total;
 
     i = 0;
     total = 0;
@@ -25,21 +24,21 @@ int total_len(int size, char **strs, char *sep)
     }
     return(total);
 }
-void fil_join(char *result, int size, char **strs, char *sep)
+void ft_fill_join(char *result, int size, char **strs, char *sep)
 {
     int i;
     int j;
     int pos;
 
-    pos = 0;
+
     i = 0;
+    pos = 0;
     while(i < size)
     {
         j = 0;
         while(strs[i][j])
             result[pos++] = strs[i][j++];
-
-        if(i < size - 1)
+        if(i < size -1)
         {
             j = 0;
             while(sep[j])
@@ -52,32 +51,21 @@ void fil_join(char *result, int size, char **strs, char *sep)
 
 char *ft_strjoin(int size, char **strs, char *sep)
 {
-	char *result;
-	int total;
-
-	if (size == 0)
-	{
-		result = malloc(1);
-		if (!result)
-			return (NULL);
-		result[0] = '\0';
-		return (result);
-	}
-    total = total_len(size, strs, sep);
-	result = malloc(total + 1);
-	if (!result)
-		return (NULL);
-	fil_join(result, size, strs, sep);
-	return (result);
-}
-#include <stdio.h>
-
-int main()
-{
-    char *str[] = {"hello", "word", "solay"};
     char *result;
+    int   total;
 
-    result = ft_strjoin(3, str, "#");
-    printf("%s", result);
-    return(0);
+    if(size == 0)
+    {
+        result = malloc(1);
+        if(!result)
+            return(NULL);
+        result[0] = '\0';
+        return(result);
+    }
+    total = total_len(size, strs, sep);
+    result = malloc(total + 1);
+    if(!result)
+        return(NULL);
+    ft_fill_join(result, size, strs, sep);
+    return(result);
 }

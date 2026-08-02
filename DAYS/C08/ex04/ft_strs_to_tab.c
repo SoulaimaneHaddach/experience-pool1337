@@ -46,9 +46,9 @@ t_stock_par	*ft_strs_to_tab(int ac, char **av)
         tab[i].size = ft_strlen(av[i]);
         tab[i].str  = av[i];
         tab[i].copy = ft_strdup(av[i]);
-        i++;
         if(!tab[i].copy)
             return(0);
+        i++;
     }
     tab[i].size = 0;
     tab[i].str  = 0;

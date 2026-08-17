@@ -24,7 +24,6 @@ The code in this repository is not exactly the same as the code I submitted duri
 
 I made changes because, when you're there, you realize that you can always do something better than what you did yesterday.
 
-So yeah, it's based on my work from the Pool and uses my own algorithms and ideas, but it's not a direct copy of what I submitted there. Hhh.
 
 ## Projects
 

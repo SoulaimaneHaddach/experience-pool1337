@@ -36,4 +36,4 @@ I don't know if I will continue my journey at 1337, but I know that those 26 day
 
 I met amazing people, made good friends, learned a lot, pushed myself beyond my usual limits, and had a lot of great moments.
 
-And yeah, one thing: you're here to learn, not to copy-paste. Enjoy the experience, do your best, and don't forget to be happy as much as you can.
+And yeah, ## one thing: you're here to learn, not to copy-paste. Enjoy the experience, do your best, and don't forget to be happy as much as you can.
